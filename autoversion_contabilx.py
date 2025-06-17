@@ -13,7 +13,7 @@ for line in p.stdout.readlines():
 retval = p.wait()
 
 
-p = subprocess.Popen('y: & cd contabilx & git push origin master:developer', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+p = subprocess.Popen('y: & cd contabilx & git push', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 for line in p.stdout.readlines():
     print(line, end=' \n')
 retval = p.wait()
